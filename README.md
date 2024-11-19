@@ -5,7 +5,9 @@ Install sqlite3 package, first!
 
 Currently running in Raspberry Pi 4B for the DB maintenance, while for ADS-B (feeding adsb.fi service) remote receiving station I'm using Raspberry Pi 3B, all in my LAN. 
 
-Remember to update the DB with the help of cron, for example:
+The DB file will be automatically created the first time db.py is run, in /home/pi. 
+
+Remember to modify the main python script and update the DB with the help of cron, for example:
 
 * * * * * /usr/bin/python3 /home/pi/db.py
 
