@@ -3,9 +3,11 @@ Query and analyze local unique ADS-B contacts database (SQLite), updated by remo
 
 Install sqlite3 package, first! 
 
-Currently running in Raspberry Pi 4B for the DB maintenance, while for ADS-B (feeding adsb.fi service) remote receiving station I'm using Raspberry Pi 3B, all in my LAN. 
+Currently running in Raspberry Pi 4B for the DB maintenance, while for ADS-B (feeding adsb.fi service) remote receiver I'm using Raspberry Pi 3B, all in my LAN. 
 
 The DB file will be automatically created the first time db.py is run, in /home/pi. 
+
+Files callsign_patterns.txt and hex_prefixes.txt contain known military partial callsigns and Hex codes, and these are used by the script in the section "Show Military Flights" ("Isola voli militari").
 
 Remember to modify the main python script and update the DB with the help of cron, for example:
 
