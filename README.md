@@ -11,7 +11,6 @@ Remember to update the DB with the help of cron, for example:
 
 Here's you are current main menu, working on it! (Currently in IT language):
 
------------------------------
    Interrogazioni Database
 -----------------------------
 1. Ricerca Specifica (HEX o Callsign)
