@@ -9,11 +9,11 @@ Remember to update the DB with the help of cron, for example:
 
 * * * * * /usr/bin/python3 /home/pi/db.py
 
-Here's you are current menu, working on it (currently in IT language):
+Here's you are current main menu, working on it! (Currently in IT language):
 
-=============================
+-----------------------------
    Interrogazioni Database
-=============================
+-----------------------------
 1. Ricerca Specifica (HEX o Callsign)
 2. Filtra per Data
 3. Mostra Record e Classifiche
@@ -21,6 +21,4 @@ Here's you are current menu, working on it (currently in IT language):
 5. Isola voli militari
 6. Mostra voli Ground (altezza = 'ground')
 7. Esci
-=============================
-Scegli un'opzione:
 
