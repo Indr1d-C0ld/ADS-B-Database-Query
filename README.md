@@ -15,8 +15,6 @@ Remember to modify the main python script and update the DB with the help of cro
 
 Here's you are current main menu, working on it! (Currently in IT language):
 
-       Flight Tracker
-------------------------------
 1. Ricerca Specifica
 2. Filtra per Data
 3. Voli a Terra
