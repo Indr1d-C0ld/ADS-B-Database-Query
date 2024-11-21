@@ -15,13 +15,19 @@ Remember to modify the main python script and update the DB with the help of cro
 
 Here's you are current main menu, working on it! (Currently in IT language):
 
-   Interrogazioni Database
------------------------------
-1. Ricerca Specifica (HEX o Callsign)
+=============================
+       Flight Tracker
+=============================
+1. Ricerca Specifica
 2. Filtra per Data
-3. Mostra Record e Classifiche
-4. Mostra voli con Squawk di Emergenza
-5. Isola voli militari
-6. Mostra voli Ground (altezza = 'ground')
-7. Esci
+3. Voli a Terra
+4. Voli con Squawk d'Emergenza
+5. Isola Voli Militari
+6. Classifiche
+7. Ricerca Online (adsb.fi)
+8. Statistiche Database
+9. Info Hardware
+0. Esci
+=============================
+Scegli un'opzione: 
 
