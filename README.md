@@ -9,9 +9,7 @@ The DB file will be automatically created the first time db.py is run, in /home/
 
 Files callsign_patterns.txt and hex_prefixes.txt contain known military partial callsigns and Hex codes, and these are used by the script in the section "Show Military Flights" ("Isola voli militari").
 
-Remember to modify the main python script and update the DB with the help of cron, for example:
-
-* * * * * /usr/bin/python3 /home/pi/db.py
+Remember to modify the main python script and update the DB with the help of cron.
 
 Here's you are current main menu, working on it! (Currently in IT language):
 
