@@ -268,18 +268,20 @@ database_statistics() {
     # Calcola altitudine media
     avg_altitude=$(sqlite3 $DB_PATH "SELECT AVG(altitude) FROM flights WHERE altitude > 0 AND altitude != 'ground' AND hex NOT LIKE '~%';")
     avg_altitude=${avg_altitude:-0}  # Se null, imposta a 0
+    avg_altitude=$(echo "$avg_altitude" | cut -d '.' -f 1)  # Rimuovi parte decimale
 
     # Calcola velocità media
     avg_speed=$(sqlite3 $DB_PATH "SELECT AVG(speed) FROM flights WHERE speed > 0 AND hex NOT LIKE '~%';")
     avg_speed=${avg_speed:-0}  # Se null, imposta a 0
+    avg_speed=$(echo "$avg_speed" | cut -d '.' -f 1)  # Rimuovi parte decimale
 
     # Ottieni la dimensione del database
     db_size=$(du -h $DB_PATH | awk '{print $1}')
 
     # Visualizza i risultati
     echo "Numero di HEX univoci salvati: $unique_hex"
-    echo "Altitudine media: $(printf "%.2f" $avg_altitude) piedi"
-    echo "Velocità media: $(printf "%.2f" $avg_speed) nodi"
+    echo "Altitudine media: $(printf "%.0f" $avg_altitude) piedi"
+    echo "Velocità media: $(printf "%.0f" $avg_speed) nodi"
     echo "Dimensione del database: $db_size"
 
     echo "=============================="
